@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Globally</title>
+  </head>
+  <body>
+    <script src="../vue.js"></script>
+    <div id="app">
+      <button @click="count++">{{ count }}</button>
+    </div>
+    <script>
+      const {createApp} =Vue
+      createApp({
+      data(){
+      return{
+       count:0
+      }}
+      }).mount('#app')
+    </script>
+  </body>
+</html>
